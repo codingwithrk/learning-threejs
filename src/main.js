@@ -4,6 +4,12 @@ import * as THREE from 'three'
 // Scene
 const scene = new THREE.Scene();
 
+// Clock (This is Deprecated)
+// const clock = new THREE.Clock();
+
+// Timer
+const timer = new THREE.Timer();
+
 // 3D Object - mesh
 // geometry
 const geometry = new THREE.BoxGeometry(1, 1, 1);
@@ -28,5 +34,32 @@ const renderer = new THREE.WebGLRenderer({canvas});
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 // Renderer Turn On
-renderer.render(scene, camera);
 
+// requestAnimationFrame (requestAnimationFrame.mp4)
+// function animate() {
+//     cube.rotation.y += 0.01;
+//     cube.rotation.x += 0.02;
+//     renderer.render(scene, camera);
+//     requestAnimationFrame(animate);
+// }
+
+// Clock (clock.mp4)
+// function animate() {
+//     const delta = clock.getElapsedTime();
+//     cube.rotation.y = delta;
+//     cube.rotation.x = delta;
+//     renderer.render(scene, camera);
+//     requestAnimationFrame(animate);
+// }
+
+// Timer (timer.mp4)
+function animate() {
+    timer.update();
+    const delta = timer.getDelta();
+    cube.rotation.y += delta;
+    cube.rotation.x += delta;
+    renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+}
+
+animate();
