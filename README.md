@@ -1,3 +1,3 @@
-# Your First Three.js Scene
+# Fixing the Resizing Problem & OrbitControls
 
-![Image](https://github.com/codingwithrk/learning-threejs/blob/main/output/your-first-threejs-scene.png)
+[Fix Video](https://github.com/codingwithrk/learning-threejs/blob/main/output/06/fix.mp4)
