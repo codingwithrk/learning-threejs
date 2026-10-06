@@ -16,7 +16,20 @@ const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
 // Camera
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+
+// Perspective camera
+
+// Human eye (human-eye.png)
+// const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+
+// Wide (wide.png)
+// const camera = new THREE.PerspectiveCamera(120, window.innerWidth / window.innerHeight, 0.1, 100);
+
+// Zoomed (zoomed.png)
+// const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 100);
+
+// Orthographic camera
+const camera = new THREE.OrthographicCamera(-2, 2, 2, -2, 0.1, 100);
 
 camera.position.set(0, 0, 3);
 
