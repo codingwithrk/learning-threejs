@@ -1,5 +1,5 @@
-import './style.css'
-import * as THREE from 'three'
+import './style.css';
+import * as THREE from 'three';
 
 // Scene
 const scene = new THREE.Scene();
@@ -42,4 +42,3 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 
 // Renderer Turn On
 renderer.render(scene, camera);
-
