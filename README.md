@@ -35,7 +35,7 @@ npm run dev
 | 04 | [44:40](https://youtu.be/NGFhiCJEbdY?t=2680) | Animation | `04-animation` | ✅ |
 | 05 | [58:26](https://youtu.be/NGFhiCJEbdY?t=3506) | Camera in Three.js | `05-camera` | ✅ |
 | 06 | [1:10:19](https://youtu.be/NGFhiCJEbdY?t=4219) | Fixing the Resizing Problem & OrbitControls | `06-resizing-and-orbitcontrols` | ✅ |
-| 07 | [1:26:02](https://youtu.be/NGFhiCJEbdY?t=5162) | Geometry | `07-geometry` | 🟨 |
+| 07 | [1:26:02](https://youtu.be/NGFhiCJEbdY?t=5162) | Geometry | `07-geometry` | ✅ |
 | 08 | [1:43:57](https://youtu.be/NGFhiCJEbdY?t=6237) | Debug UI (lil-gui) | `08-debug-ui-lil-gui` | ⬜ |
 | 09 | [2:03:28](https://youtu.be/NGFhiCJEbdY?t=7408) | Textures | `09-textures` | ⬜ |
 | 10 | [2:45:49](https://youtu.be/NGFhiCJEbdY?t=9949) | Materials | `10-materials` | ⬜ |
