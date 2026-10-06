@@ -15,9 +15,25 @@ const timer = new THREE.Timer();
 
 // 3D Object - mesh
 // geometry
-const geometry = new THREE.BoxGeometry(1, 1, 1);
+// const geometry = new THREE.BoxGeometry(1, 1, 1);
+// const geometry = new THREE.SphereGeometry( 15, 32, 16 );
+// const geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
+
+// Custom geometry
+const geometry = new THREE.BufferGeometry();
+
+// How many triangles needed
+const count = 50;
+
+// Need to declare position of triangle
+const positionArray = new Float32Array(count * 3 * 3);
+for (let i = 0; i < count * 3 * 3; i++) {
+    positionArray[i] = (Math.random() - 0.5) * 4; // range -4 to 4
+}
+geometry.setAttribute('position', new THREE.BufferAttribute(positionArray, 3));
 
 // material
+// const material = new THREE.MeshBasicMaterial({color: 0xff0000, wireframe: true});
 const material = new THREE.MeshBasicMaterial({color: 0xff0000});
 
 const cube = new THREE.Mesh(geometry, material);
@@ -56,8 +72,8 @@ function animate(timestamp) {
     timer.update(timestamp);
     controls.update();
     const delta = timer.getDelta();
-    cube.rotation.y += delta;
-    cube.rotation.x += delta;
+    // cube.rotation.y += delta;
+    // cube.rotation.x += delta;
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
 }
