@@ -29,8 +29,8 @@ npm run dev
 
 | #  | Timestamp | Topic | Branch | Status |
 |----|-----------|-------|--------|--------|
-| 01 | [0:59](https://youtu.be/NGFhiCJEbdY?t=59) | Three.js Introduction | `01-threejs-introduction` | ✅ |
-| 02 | [6:53](https://youtu.be/NGFhiCJEbdY?t=413) | Your First Three.js Scene | `02-first-threejs-scene` | ✅ |
+| 01 | [0:59](https://youtu.be/NGFhiCJEbdY?t=59) | Three.js Introduction | `-` | ✅ |
+| 02 | [6:53](https://youtu.be/NGFhiCJEbdY?t=413) | Your First Three.js Scene | `02-your-first-threejs-scene` | ✅ |
 | 03 | [28:19](https://youtu.be/NGFhiCJEbdY?t=1699) | Transformation of Objects | `03-transformation-of-objects` | ✅ |
 | 04 | [44:40](https://youtu.be/NGFhiCJEbdY?t=2680) | Animation | `04-animation` | ✅ |
 | 05 | [58:26](https://youtu.be/NGFhiCJEbdY?t=3506) | Camera in Three.js | `05-camera` | 🟨 |
